@@ -43,7 +43,7 @@ public class Login extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox1 = new javax.swing.JComboBox<String>();
         jLabel4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -64,7 +64,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "Admin", "Guest" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Select", "Admin" }));
 
         jLabel4.setText("Role");
 
@@ -158,7 +158,7 @@ public class Login extends javax.swing.JFrame {
                 pst.setString(1, user);
                 pst.setString(2, pass);
                 rs = pst.executeQuery();
-                
+//                
                 if (rs.next()) {
                     String sl = rs.getString("role");
                     String un = rs.getString("username");
