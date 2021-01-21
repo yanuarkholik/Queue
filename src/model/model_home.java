@@ -70,10 +70,9 @@ public class model_home {
         control_home.jTable2();
     }
     public static void runningservices(){
-                //SET CURRENT SPESIFIC TIME
+        //SET CURRENT SPESIFIC TIME
         java.util.Date dt = new java.util.Date();
-        java.text.SimpleDateFormat sdf
-                = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
         String currentTime = sdf.format(dt);
 
@@ -107,7 +106,7 @@ public class model_home {
     public static void backuprecent(){
         try {
             //create pdf object
-            String file_name = "D:\\RECENT.pdf";
+            String file_name = "E:\\Semester4\\BP\\ANTRIAN_PROJECT\\backup_data\\RECENT.pdf";
             Document document = new Document();
             PdfWriter.getInstance(document, new FileOutputStream(file_name));
 
@@ -150,7 +149,7 @@ public class model_home {
     public static void backupfull(){
         try {
             //create pdf object
-            String file_name = "D:\\FULL.pdf";
+            String file_name = "E:\\Semester4\\BP\\ANTRIAN_PROJECT\\backup_data\\FULL.pdf";
             Document document = new Document();
             PdfWriter.getInstance(document, new FileOutputStream(file_name));
 

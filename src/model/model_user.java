@@ -22,8 +22,7 @@ public class model_user {
     public static void addqueue(){
         //SET CURRENT SPESIFIC TIME
         java.util.Date dt = new java.util.Date();
-        java.text.SimpleDateFormat sdf
-                = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        java.text.SimpleDateFormat sdf= new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
         String currentTime = sdf.format(dt);
         //QUERYINNG
